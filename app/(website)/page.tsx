@@ -76,7 +76,7 @@ const whyChooseUs = [
   {
     icon: Shield,
     title: 'Experiencia Comprobada',
-    description: 'Más de 15 años organizando viajes corporativos exitosos.',
+    description: 'Más de 45 años organizando viajes corporativos exitosos.',
   },
   {
     icon: Globe,
@@ -103,9 +103,11 @@ export default function HomePage() {
         secondaryCtaText="Ver Ferias"
         secondaryCtaHref="/ferias"
         backgroundImages={[
-          'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80', // Trade fair exhibition
-          'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1920&q=80', // Business meeting
-          'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80', // Modern conference
+          'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80', // Bali rice terraces
+          'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1920&q=80', // Maldives beach paradise
+          'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1920&q=80', // Tokyo cityscape
+          'https://images.unsplash.com/photo-1528181304800-259b08848526?w=1920&q=80', // Thailand temple
+          'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1920&q=80', // Paris
         ]}
         nextFair={{
           name: 'Canton Fair Fase 1',
@@ -247,8 +249,8 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-center">
             {[
-              { value: '500+', label: 'Empresas Atendidas' },
-              { value: '15+', label: 'Años de Experiencia' },
+              { value: '650+', label: 'Empresas Atendidas' },
+              { value: '45+', label: 'Años de Experiencia' },
               { value: '20+', label: 'Ferias al Año' },
               { value: '4', label: 'Continentes' },
             ].map((stat, index) => (

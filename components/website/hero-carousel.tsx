@@ -184,7 +184,7 @@ export function HeroCarousel({
           <div className="mt-16 flex flex-wrap gap-8 text-sm text-gray-300 animate-fade-in-up opacity-0" style={{ animationDelay: '0.5s' }}>
             <div className="flex items-center gap-2 group">
               <div className="h-2 w-2 rounded-full bg-gold group-hover:scale-125 transition-transform" />
-              <span>+15 años de experiencia</span>
+              <span>+45 años de experiencia</span>
             </div>
             <div className="flex items-center gap-2 group">
               <div className="h-2 w-2 rounded-full bg-gold group-hover:scale-125 transition-transform" />
@@ -192,7 +192,7 @@ export function HeroCarousel({
             </div>
             <div className="flex items-center gap-2 group">
               <div className="h-2 w-2 rounded-full bg-gold group-hover:scale-125 transition-transform" />
-              <span>+500 empresas satisfechas</span>
+              <span>+650 empresas satisfechas</span>
             </div>
           </div>
         </div>

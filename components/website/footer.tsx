@@ -22,15 +22,14 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="inline-block">
               <Image
-                src="/logo.jpg"
-                alt="ITT Travel"
-                width={50}
-                height={33}
-                className="h-8 w-auto object-contain rounded"
+                src="/nuevo-logo-itt.jpeg"
+                alt="ITT Travel - International Travel & Fairs"
+                width={280}
+                height={100}
+                className="h-24 w-auto object-contain rounded-2xl"
               />
-              <span className="font-playfair text-xl font-bold text-gold">ITT Travel</span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Especialistas en viajes corporativos, ferias internacionales y visitas técnicas a fábricas de alta tecnología.
@@ -77,15 +76,15 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <Phone className="h-4 w-4 text-gold flex-shrink-0" />
-                <span>+51 999 999 999</span>
+                <span>+51 963 606 723</span>
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <Mail className="h-4 w-4 text-gold flex-shrink-0" />
-                <span>info@itttravel.com</span>
+                <span>Operaciones@itt-travelcorp.com</span>
               </li>
               <li className="flex items-start gap-3 text-gray-400 text-sm">
                 <MapPin className="h-4 w-4 text-gold flex-shrink-0 mt-0.5" />
-                <span>Lima, Perú</span>
+                <span>Calle Esquilache 731 piso 6, San Isidro, Lima, Perú</span>
               </li>
             </ul>
           </div>
@@ -99,16 +98,16 @@ export function Footer() {
               <Image
                 src="/logo-asociaciones.jpeg"
                 alt="Asociaciones del sector turístico"
-                width={120}
-                height={48}
-                className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                width={180}
+                height={72}
+                className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 hover:opacity-100"
               />
               <Image
                 src="/logo_alemania.jpeg"
                 alt="Ferias de Alemania"
-                width={120}
-                height={48}
-                className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                width={180}
+                height={72}
+                className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 hover:opacity-100"
               />
             </div>
           </div>

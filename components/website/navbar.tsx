@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/', label: 'Inicio' },
   { href: '/servicios', label: 'Servicios' },
   { href: '/ferias', label: 'Ferias' },
+  { href: '/destinos-grupales', label: 'Destinos Grupales' },
   { href: '/nosotros', label: 'Nosotros' },
   { href: '/contacto', label: 'Contacto' },
 ]
@@ -37,34 +38,21 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-24 items-center justify-between">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-3 group"
+            className="flex items-center group"
           >
-            <div className="relative overflow-hidden rounded-lg transition-transform duration-300 group-hover:scale-105">
+            <div className="relative overflow-hidden rounded-2xl transition-transform duration-300 group-hover:scale-105">
               <Image
-                src="/logo.jpg"
-                alt="ITT Travel"
-                width={60}
-                height={40}
-                className="h-10 w-auto object-contain"
+                src="/nuevo-logo-itt.jpeg"
+                alt="ITT Travel - International Travel & Fairs"
+                width={220}
+                height={80}
+                className="h-16 sm:h-20 w-auto object-contain rounded-2xl"
+                priority
               />
-            </div>
-            <div className="hidden sm:block">
-              <p className={cn(
-                "font-playfair text-lg font-bold transition-colors duration-300",
-                scrolled ? "text-burgundy" : "text-white"
-              )}>
-                ITT Travel
-              </p>
-              <p className={cn(
-                "text-xs transition-colors duration-300",
-                scrolled ? "text-muted-foreground" : "text-white/70"
-              )}>
-                Viajes Corporativos
-              </p>
             </div>
           </Link>
 

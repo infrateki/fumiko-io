@@ -9,7 +9,7 @@ import { ImageCarousel } from '@/components/website/image-carousel'
 export const metadata: Metadata = {
   title: 'Nosotros | ITT Travel - Nuestra Historia',
   description:
-    'Conozca ITT Travel: más de 15 años de experiencia en viajes corporativos, ferias internacionales y visitas técnicas. ITT Mayorista + ITT Corp.',
+    'Conozca ITT Travel: más de 45 años de experiencia en viajes corporativos, ferias internacionales y visitas técnicas. ITT Grupos + ITT Corp.',
 }
 
 const values = [
@@ -64,7 +64,7 @@ export default function NosotrosPage() {
             Sobre <span className="text-gold">Nosotros</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s' }}>
-            Más de 15 años conectando empresas peruanas con el mundo
+            Más de 45 años conectando empresas peruanas con el mundo
           </p>
           <div className="mt-8 h-1 w-24 bg-gold rounded-full mx-auto animate-fade-in-up opacity-0" style={{ animationDelay: '0.3s' }} />
         </div>
@@ -91,7 +91,7 @@ export default function NosotrosPage() {
 
               {/* Floating Stats Card */}
               <div className="absolute -bottom-8 -right-4 bg-white rounded-xl shadow-xl p-4 border border-border">
-                <div className="font-playfair text-3xl font-bold text-burgundy">15+</div>
+                <div className="font-playfair text-3xl font-bold text-burgundy">45+</div>
                 <div className="text-sm text-muted-foreground">Años de Experiencia</div>
               </div>
             </div>
@@ -147,9 +147,9 @@ export default function NosotrosPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-burgundy/90 via-burgundy/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="font-playfair text-2xl font-bold text-white">
-                    ITT Mayorista
+                    ITT Grupos
                   </h3>
-                  <p className="mt-1 text-white/80">División de Ferias y Grupos</p>
+                  <p className="mt-1 text-white/80">División de grupos y vacaciones</p>
                 </div>
               </div>
               <div className="p-6">
@@ -184,7 +184,7 @@ export default function NosotrosPage() {
                   <h3 className="font-playfair text-2xl font-bold text-gold">
                     ITT Corp
                   </h3>
-                  <p className="mt-1 text-white/80">División Corporativa</p>
+                  <p className="mt-1 text-white/80">División ferias</p>
                 </div>
               </div>
               <div className="p-6">
@@ -291,16 +291,16 @@ export default function NosotrosPage() {
               <Image
                 src="/logo-asociaciones.jpeg"
                 alt="Asociaciones del sector turístico"
-                width={200}
-                height={80}
-                className="h-16 sm:h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                width={280}
+                height={112}
+                className="h-24 sm:h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
               />
               <Image
                 src="/logo_alemania.jpeg"
                 alt="Ferias de Alemania"
-                width={200}
-                height={80}
-                className="h-16 sm:h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                width={280}
+                height={112}
+                className="h-24 sm:h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           </div>

@@ -12,20 +12,20 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Teléfono',
-    value: '+51 999 999 999',
-    href: 'tel:+51999999999',
+    value: '+51 963 606 723',
+    href: 'tel:+51963606723',
   },
   {
     icon: Mail,
     title: 'Email',
-    value: 'info@itttravel.com',
-    href: 'mailto:info@itttravel.com',
+    value: 'Operaciones@itt-travelcorp.com',
+    href: 'mailto:Operaciones@itt-travelcorp.com',
   },
   {
     icon: MapPin,
     title: 'Dirección',
-    value: 'Av. Javier Prado Este 123, San Isidro, Lima',
-    href: 'https://maps.google.com',
+    value: 'Calle Esquilache 731 piso 6, San Isidro, Lima, Perú',
+    href: 'https://maps.google.com/?q=Calle+Esquilache+731+San+Isidro+Lima+Peru',
   },
   {
     icon: Clock,
@@ -64,7 +64,7 @@ export default function ContactoPage() {
     }))
   }
 
-  const whatsappUrl = `https://wa.me/51999999999?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/51963606723?text=${encodeURIComponent(
     'Hola, me interesa información sobre sus servicios de viajes corporativos.'
   )}`
 

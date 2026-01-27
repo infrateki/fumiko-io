@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { FairCard } from '@/components/website/fair-card'
 import { CTASection } from '@/components/website/cta-section'
 import { cn } from '@/lib/utils'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 
 const fairs = [
   // TECNOLOGÍA
@@ -314,8 +316,8 @@ export default function FeriasPage() {
             {[
               { value: '20+', label: 'Ferias al año' },
               { value: '4', label: 'Continentes' },
-              { value: '500+', label: 'Clientes satisfechos' },
-              { value: '15', label: 'Años de experiencia' },
+              { value: '650+', label: 'Clientes satisfechos' },
+              { value: '45', label: 'Años de experiencia' },
             ].map((stat, index) => (
               <div key={stat.label} className="animate-fade-in-up opacity-0" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="font-playfair text-4xl sm:text-5xl font-bold text-gold">{stat.value}</div>
@@ -382,6 +384,26 @@ export default function FeriasPage() {
                 del mundo. Contáctenos con los detalles de la feria que le interesa y
                 prepararemos un paquete personalizado para su empresa.
               </p>
+              <form
+                className="mt-6 space-y-4"
+                action={`mailto:Operaciones@itt-travelcorp.com?subject=${encodeURIComponent('Solicitud de Feria Personalizada')}`}
+                method="GET"
+              >
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    ¿Qué feria te gustaría visitar?
+                  </label>
+                  <Input
+                    type="text"
+                    name="body"
+                    placeholder="Nombre de la feria..."
+                    className="w-full"
+                  />
+                </div>
+                <Button type="submit" className="bg-burgundy hover:bg-burgundy/90 text-white">
+                  Enviar solicitud
+                </Button>
+              </form>
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-white rounded-xl border border-border">
                   <div className="font-playfair text-3xl font-bold text-burgundy">100+</div>

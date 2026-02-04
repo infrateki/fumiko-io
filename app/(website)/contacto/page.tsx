@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { Mail, Phone, MapPin, Clock, MessageCircle, Send } from 'lucide-react'
+import { Mail, Phone, MapPin, MessageCircle, Send, Linkedin, Instagram, Facebook } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -24,14 +24,29 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Dirección',
-    value: 'Calle Esquilache 731 piso 6, San Isidro, Lima, Perú',
-    href: 'https://maps.google.com/?q=Calle+Esquilache+731+San+Isidro+Lima+Peru',
+    value: 'Calle Esquilache 371 piso 6, San Isidro, Lima, Perú',
+    href: 'https://maps.google.com/?q=Calle+Esquilache+371+San+Isidro+Lima+Peru',
+  },
+]
+
+const socialLinks = [
+  {
+    icon: Linkedin,
+    title: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/international-travel-team/',
+    color: '#0077B5',
   },
   {
-    icon: Clock,
-    title: 'Horario',
-    value: 'Lunes a Viernes: 9am - 6pm',
-    href: null,
+    icon: Instagram,
+    title: 'Instagram',
+    href: 'https://www.instagram.com/itt_travelcorp/',
+    color: '#E4405F',
+  },
+  {
+    icon: Facebook,
+    title: 'Facebook',
+    href: 'https://www.facebook.com/profile.php?id=61580202170551',
+    color: '#1877F2',
   },
 ]
 
@@ -268,6 +283,26 @@ export default function ContactoPage() {
                       </div>
                     </div>
                   ))}
+                </div>
+
+                {/* Social Media Links */}
+                <div className="mt-8 pt-6 border-t border-border">
+                  <h4 className="text-sm font-medium text-muted-foreground mb-4">Síguenos en redes sociales</h4>
+                  <div className="flex gap-4">
+                    {socialLinks.map((social) => (
+                      <a
+                        key={social.title}
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex h-12 w-12 items-center justify-center rounded-lg bg-muted hover:opacity-80 transition-all"
+                        style={{ backgroundColor: `${social.color}20` }}
+                        title={social.title}
+                      >
+                        <social.icon className="h-5 w-5" style={{ color: social.color }} />
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
 

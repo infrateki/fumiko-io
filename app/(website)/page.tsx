@@ -1,13 +1,10 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
-import { Briefcase, Building2, Factory, Shield, Globe, Users, CheckCircle } from 'lucide-react'
+import { Briefcase, Building2, Users as UsersIcon, Shield, Globe, Users, CheckCircle } from 'lucide-react'
 import { HeroCarousel } from '@/components/website/hero-carousel'
 import { ServiceCard } from '@/components/website/service-card'
-import { FairCard } from '@/components/website/fair-card'
 import { SectionHeader } from '@/components/website/section-header'
 import { CTASection } from '@/components/website/cta-section'
 import { UpcomingFairs } from '@/components/website/upcoming-fairs'
-import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
   title: 'ITT Travel | Viajes Corporativos, Ferias y Visitas Técnicas',
@@ -18,57 +15,25 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Briefcase,
-    title: 'Viajes Corporativos',
+    title: 'Viajes Corporativos y de Incentivo',
     description:
-      'Gestión integral de viajes de negocios. Vuelos, hoteles, traslados y todo lo que su empresa necesita para viajar con tranquilidad.',
+      'Gestión integral de viajes de negocios y programas de incentivo. Vuelos, hoteles, traslados, visitas técnicas y premios laborales.',
     href: '/servicios#corporativos',
   },
   {
     icon: Building2,
-    title: 'Ferias y Exposiciones',
+    title: 'Misiones Comerciales',
     description:
-      'Organización completa para asistir a las principales ferias comerciales del mundo: Canton Fair, CES, MWC Barcelona y más.',
+      'Organización completa para asistir a las principales ferias comerciales del mundo: Canton Fair, Chinaplas, Bauma China y más.',
     href: '/servicios#ferias',
     featured: true,
   },
   {
-    icon: Factory,
-    title: 'Visitas Técnicas',
+    icon: UsersIcon,
+    title: 'Viajes en grupo',
     description:
-      'Tours especializados a fábricas y centros de producción de alta tecnología. Conozca de primera mano a sus proveedores.',
-    href: '/servicios#visitas',
-  },
-]
-
-const featuredFairs = [
-  {
-    name: 'Canton Fair',
-    location: 'Guangzhou',
-    country: 'China',
-    dates: 'Abril y Octubre 2025',
-    description:
-      'La feria comercial más grande de China y una de las más importantes del mundo. Más de 25,000 expositores en un solo lugar.',
-    featured: true,
-    category: 'comercial',
-    spotsLeft: 5,
-  },
-  {
-    name: 'CES Las Vegas',
-    location: 'Las Vegas',
-    country: 'USA',
-    dates: '7-10 Enero 2025',
-    description:
-      'La feria de tecnología de consumo más grande del mundo. Descubra las últimas innovaciones y tendencias tecnológicas.',
-    category: 'tecnologia',
-  },
-  {
-    name: 'MWC Barcelona',
-    location: 'Barcelona',
-    country: 'España',
-    dates: '24-27 Febrero 2025',
-    description:
-      'Mobile World Congress: el evento líder en telecomunicaciones y tecnología móvil a nivel mundial.',
-    category: 'tecnologia',
+      'Viajes organizados a destinos fascinantes del mundo. Todo incluido, guías expertos y experiencias inolvidables.',
+    href: '/servicios#grupos',
   },
 ]
 
@@ -95,7 +60,7 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <HeroCarousel
-        title="Conectamos su empresa"
+        title="Te conectamos"
         highlight="con el mundo"
         subtitle="Especialistas en viajes corporativos, ferias internacionales y visitas técnicas a fábricas de alta tecnología. Hacemos que su negocio llegue más lejos."
         ctaText="Solicitar Cotización"
@@ -103,15 +68,17 @@ export default function HomePage() {
         secondaryCtaText="Ver Ferias"
         secondaryCtaHref="/ferias"
         backgroundImages={[
-          'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80', // Bali rice terraces
-          'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1920&q=80', // Maldives beach paradise
-          'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1920&q=80', // Tokyo cityscape
-          'https://images.unsplash.com/photo-1528181304800-259b08848526?w=1920&q=80', // Thailand temple
-          'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1920&q=80', // Paris
+          'https://images.unsplash.com/photo-1528127269322-539801943592?w=1920&q=80', // Ha-Long Bay, Vietnam
+          'https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=1920&q=80', // Phi Phi Islands, Thailand
+          'https://images.unsplash.com/photo-1537531383496-f4749e00d3d9?w=1920&q=80', // Yangshuo, China karst mountains
+          'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1920&q=80', // El Nido, Philippines
+          'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?w=1920&q=80', // Bali temple, Indonesia
+          'https://images.unsplash.com/photo-1529921879218-f99546d03a26?w=1920&q=80', // Guilin, China
+          'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=1920&q=80', // Zhangjiajie, China (couple hiking)
         ]}
         nextFair={{
           name: 'Canton Fair Fase 1',
-          dates: '15-19 Abril 2025',
+          dates: '15-19 Abril 2026',
           location: 'Guangzhou, China'
         }}
         interval={6000}
@@ -148,39 +115,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Fairs Section */}
-      <section className="py-20 bg-secondary/30">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            title="Ferias Destacadas"
-            subtitle="Las principales ferias comerciales y tecnológicas del mundo"
-          />
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {featuredFairs.map((fair, index) => (
-              <div
-                key={fair.name}
-                className="animate-fade-in-up opacity-0"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <FairCard {...fair} />
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-burgundy text-burgundy hover:bg-burgundy hover:text-white transition-all duration-300"
-            >
-              <Link href="/ferias">Ver todas las ferias</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us Section */}
       <section className="py-20 bg-background">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -188,7 +122,7 @@ export default function HomePage() {
             {/* Left Content */}
             <div className="animate-fade-in-left opacity-0">
               <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-foreground">
-                ¿Por qué elegir <span className="text-burgundy">ITT Travel</span>?
+                ¿Por qué elegir <span className="text-burgundy">ITT Travel Corp</span>?
               </h2>
               <div className="mt-4 h-1 w-20 bg-gold rounded-full" />
 
@@ -249,7 +183,7 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-center">
             {[
-              { value: '650+', label: 'Empresas Atendidas' },
+              { value: '+500', label: 'Empresas Atendidas' },
               { value: '45+', label: 'Años de Experiencia' },
               { value: '20+', label: 'Ferias al Año' },
               { value: '4', label: 'Continentes' },

@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { FairCard } from '@/components/website/fair-card'
 import { CTASection } from '@/components/website/cta-section'
+import { FairsCalendar } from '@/components/website/fairs-calendar'
+import { SectionHeader } from '@/components/website/section-header'
 import { cn } from '@/lib/utils'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -370,6 +372,17 @@ export default function FeriasPage() {
         </div>
       </section>
 
+      {/* Fairs Calendar Section */}
+      <section className="py-20 bg-background">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeader
+            title="Calendario de Ferias"
+            subtitle="Planifique su próximo viaje de negocios con nosotros"
+          />
+          <FairsCalendar />
+        </div>
+      </section>
+
       {/* Info Section */}
       <section className="py-20 bg-secondary/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -386,7 +399,7 @@ export default function FeriasPage() {
               </p>
               <form
                 className="mt-6 space-y-4"
-                action={`mailto:Operaciones@itt-travelcorp.com?subject=${encodeURIComponent('Solicitud de Feria Personalizada')}`}
+                action={`mailto:Operaciones@itt-travelcorp.com?subject=${encodeURIComponent('Nueva feria de recomendación Cliente')}`}
                 method="GET"
               >
                 <div>

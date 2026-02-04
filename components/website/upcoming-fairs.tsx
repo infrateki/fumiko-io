@@ -19,34 +19,74 @@ interface UpcomingFair {
 
 const upcomingFairs: UpcomingFair[] = [
   {
-    name: 'Canton Fair Fase 1',
-    dates: '15-19 Abril 2025',
+    name: 'Canton Fair - Fases 1, 2 y 3',
+    dates: 'Abril y Octubre 2026',
     location: 'Guangzhou',
     country: 'China',
     image: 'https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?w=600&q=80', // Large exhibition hall
     spotsLeft: 5,
-    daysUntil: 82,
+    daysUntil: 71,
     category: 'comercial',
   },
   {
-    name: 'China Plus Shanghai',
-    dates: '12-14 Marzo 2025',
+    name: 'Chinaplas',
+    dates: '21-24 Abril 2026',
+    location: 'Shenzhen',
+    country: 'China',
+    image: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&q=80', // Industrial/plastics
+    spotsLeft: 8,
+    daysUntil: 77,
+    category: 'industrial',
+  },
+  {
+    name: 'Bakery China',
+    dates: '19-22 Mayo 2026',
     location: 'Shanghai',
     country: 'China',
-    image: 'https://images.unsplash.com/photo-1537519414131-ad11aba5ea2e?w=600&q=80', // Shanghai business
-    spotsLeft: 8,
-    daysUntil: 48,
-    category: 'comercial',
+    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80', // Bakery/food
+    spotsLeft: 10,
+    daysUntil: 105,
+    category: 'alimentacion',
   },
   {
-    name: 'Interpack Düsseldorf',
-    dates: '4-10 Mayo 2025',
-    location: 'Düsseldorf',
-    country: 'Alemania',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80', // Packaging industry
+    name: 'HK International Lighting Fair',
+    dates: '27-30 Octubre 2026',
+    location: 'Hong Kong',
+    country: 'China',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80', // Lighting
+    spotsLeft: 12,
+    daysUntil: 266,
+    category: 'tecnologia',
+  },
+  {
+    name: 'HK Electronics Fair',
+    dates: '13-16 Octubre 2026',
+    location: 'Hong Kong',
+    country: 'China',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80', // Electronics
+    spotsLeft: 9,
+    daysUntil: 252,
+    category: 'tecnologia',
+  },
+  {
+    name: 'Asia Fruit Logistica',
+    dates: '4-6 Noviembre 2026',
+    location: 'Hong Kong',
+    country: 'China',
+    image: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=600&q=80', // Fresh fruits
+    spotsLeft: 15,
+    daysUntil: 274,
+    category: 'alimentacion',
+  },
+  {
+    name: 'Bauma China',
+    dates: '24-27 Noviembre 2026',
+    location: 'Shanghai',
+    country: 'China',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80', // Construction/machinery
     spotsLeft: 6,
-    daysUntil: 101,
-    category: 'packaging',
+    daysUntil: 294,
+    category: 'construccion',
   },
 ]
 
@@ -69,14 +109,14 @@ export function UpcomingFairs() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {upcomingFairs.map((fair, index) => (
             <div
               key={fair.name}
               className={cn(
                 'group relative bg-white rounded-2xl border border-border overflow-hidden transition-all duration-500',
                 'hover:shadow-2xl hover:shadow-burgundy/10 hover:-translate-y-2',
-                index === 0 && 'lg:col-span-1 ring-2 ring-gold'
+                index === 0 && 'ring-2 ring-gold'
               )}
             >
               {/* Image */}

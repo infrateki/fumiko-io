@@ -3,7 +3,6 @@ import Image from 'next/image'
 import {
   Briefcase,
   Building2,
-  Factory,
   Plane,
   Hotel,
   Car,
@@ -11,8 +10,14 @@ import {
   Headphones,
   Ticket,
   Users,
-  Wrench,
   CheckCircle,
+  Languages,
+  Award,
+  Factory,
+  MapPin,
+  Ship,
+  Route,
+  Clock,
 } from 'lucide-react'
 import { CTASection } from '@/components/website/cta-section'
 
@@ -26,37 +31,37 @@ const serviceDetails = [
   {
     id: 'corporativos',
     icon: Briefcase,
-    title: 'Viajes Corporativos',
+    title: 'Viajes Corporativos y de Incentivo',
     description:
-      'Gestionamos todos los aspectos de los viajes de negocios de su empresa, desde la planificación hasta la ejecución.',
+      'Gestionamos todos los aspectos de los viajes de negocios de su empresa, desde la planificación hasta la ejecución. Incluye programas de incentivo y premios laborales.',
     image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
     imageAlt: 'Equipo de negocios en reunión',
     features: [
       {
         icon: Plane,
-        title: 'Vuelos',
-        description: 'Reserva de pasajes aéreos nacionales e internacionales con las mejores tarifas corporativas.',
+        title: 'Vuelos y Hoteles',
+        description: 'Reserva de pasajes aéreos y alojamiento con las mejores tarifas corporativas.',
       },
       {
-        icon: Hotel,
-        title: 'Hoteles',
-        description: 'Alojamiento seleccionado cerca de sus reuniones de negocios y centros de convenciones.',
+        icon: Factory,
+        title: 'Visitas Técnicas',
+        description: 'Tours especializados a fábricas y centros de producción de alta tecnología.',
       },
       {
-        icon: Car,
-        title: 'Traslados',
-        description: 'Servicio de transporte ejecutivo desde el aeropuerto a su hotel y lugares de trabajo.',
+        icon: Languages,
+        title: 'Traductores',
+        description: 'Servicio de intérpretes y traductores profesionales para sus reuniones.',
       },
       {
-        icon: FileText,
-        title: 'Documentación',
-        description: 'Asesoría y gestión de visas, permisos de trabajo y requisitos migratorios.',
+        icon: Award,
+        title: 'Premios Laborales',
+        description: 'Programas de incentivo y viajes premio para sus mejores colaboradores.',
       },
     ],
     benefits: [
       'Tarifas corporativas preferenciales',
       'Políticas de viaje personalizadas',
-      'Reportes de gastos detallados',
+      'Gestión de visas y documentación',
       'Cambios y cancelaciones flexibles',
     ],
   },
@@ -65,7 +70,7 @@ const serviceDetails = [
     icon: Building2,
     title: 'Ferias y Exposiciones',
     description:
-      'Organizamos su participación completa en las principales ferias comerciales y tecnológicas del mundo.',
+      'Organizamos misiones comerciales y su participación completa en las principales ferias del mundo. Soporte 24/7.',
     image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
     imageAlt: 'Feria comercial internacional',
     features: [
@@ -85,9 +90,9 @@ const serviceDetails = [
         description: 'Organización de grupos empresariales con guía especializado.',
       },
       {
-        icon: Headphones,
-        title: 'Soporte',
-        description: 'Asistencia en sitio durante toda la duración de la feria.',
+        icon: Clock,
+        title: 'Soporte 24/7',
+        description: 'Asistencia en sitio las 24 horas durante toda la duración de la feria.',
       },
     ],
     benefits: [
@@ -98,40 +103,40 @@ const serviceDetails = [
     ],
   },
   {
-    id: 'visitas',
-    icon: Factory,
-    title: 'Visitas Técnicas',
+    id: 'grupos',
+    icon: Users,
+    title: 'Viajes en grupo',
     description:
-      'Tours especializados a fábricas y centros de producción de alta tecnología en Asia y Europa.',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80',
-    imageAlt: 'Visita técnica a fábrica',
+      'Viajes organizados a los destinos más fascinantes del mundo. Todo incluido, guías expertos y experiencias inolvidables.',
+    image: 'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&q=80',
+    imageAlt: 'Grupo de viajeros disfrutando',
     features: [
       {
-        icon: Factory,
-        title: 'Fábricas',
-        description: 'Acceso exclusivo a instalaciones de manufactura de sus proveedores.',
+        icon: Car,
+        title: 'Alquiler de Carros',
+        description: 'Servicio de alquiler de vehículos en todos los destinos con seguro incluido.',
       },
       {
-        icon: Users,
-        title: 'Reuniones',
-        description: 'Coordinación de reuniones técnicas y comerciales con fabricantes.',
+        icon: MapPin,
+        title: 'Tours a Medida',
+        description: 'Diseñamos tours personalizados según los intereses de su grupo.',
       },
       {
-        icon: Wrench,
-        title: 'Capacitación',
-        description: 'Programas de entrenamiento técnico en las instalaciones del proveedor.',
+        icon: Route,
+        title: 'Programas a Medida',
+        description: 'Itinerarios flexibles adaptados a sus necesidades y presupuesto.',
       },
       {
-        icon: FileText,
-        title: 'Informes',
-        description: 'Documentación técnica y reportes de las visitas realizadas.',
+        icon: Ship,
+        title: 'Cruceros',
+        description: 'Experiencias únicas en cruceros por los destinos más exclusivos.',
       },
     ],
     benefits: [
-      'Contacto directo con fabricantes',
-      'Negociación de precios in situ',
-      'Verificación de calidad',
-      'Establecimiento de relaciones comerciales',
+      'Guías expertos en cada destino',
+      'Todo incluido sin sorpresas',
+      'Grupos reducidos y personalizados',
+      'Experiencias únicas y memorables',
     ],
   },
 ]
@@ -154,7 +159,7 @@ export default function ServiciosPage() {
             Nuestros <span className="text-gold">Servicios</span>
           </h1>
           <p className="mt-4 text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto text-center">
-            Soluciones integrales para las necesidades de viaje corporativo de su empresa
+            Soluciones integrales diseñadas para sus viajes
           </p>
           <div className="mt-6 h-1 w-24 bg-gold rounded-full" />
         </div>

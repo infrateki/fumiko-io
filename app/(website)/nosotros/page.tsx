@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { Target, Eye, Heart, Award, Users, Globe, TrendingUp } from 'lucide-react'
 import { SectionHeader } from '@/components/website/section-header'
 import { CTASection } from '@/components/website/cta-section'
-import { FairsCalendar } from '@/components/website/fairs-calendar'
 import { ImageCarousel } from '@/components/website/image-carousel'
 
 export const metadata: Metadata = {
@@ -35,14 +34,6 @@ const values = [
   },
 ]
 
-const milestones = [
-  { year: '2009', event: 'Fundación de ITT Travel en Lima, Perú' },
-  { year: '2012', event: 'Primer grupo a Canton Fair con 20 empresarios' },
-  { year: '2015', event: 'Lanzamiento de división ITT Corp para corporativos' },
-  { year: '2018', event: 'Expansión a ferias europeas: MWC, ITB, Hannover' },
-  { year: '2020', event: 'Adaptación digital y servicios virtuales' },
-  { year: '2023', event: 'Más de 500 empresas atendidas' },
-]
 
 export default function NosotrosPage() {
   return (
@@ -51,9 +42,9 @@ export default function NosotrosPage() {
       <section className="relative py-32 pt-40 overflow-hidden">
         <ImageCarousel
           images={[
-            { src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80', alt: 'Trade fair exhibition hall' },
-            { src: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1920&q=80', alt: 'International conference' },
-            { src: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1920&q=80', alt: 'Business networking event' },
+            { src: 'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=1920&q=80', alt: 'Grupo de viajeros en destino paradisiaco' },
+            { src: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1920&q=80', alt: 'Equipo disfrutando viaje de incentivo empresarial' },
+            { src: 'https://images.unsplash.com/photo-1523908511403-7fc7b25592f4?w=1920&q=80', alt: 'Ganadores de viajes premio disfrutando' },
           ]}
           interval={5000}
           overlay={false}
@@ -73,13 +64,43 @@ export default function NosotrosPage() {
       {/* Story Section */}
       <section className="py-20 bg-background">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
+          {/* Main Content */}
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-foreground text-center">
+              Agencia Boutique de Viajes Corporativos y Misiones Feriales
+            </h2>
+            <div className="mt-4 h-1 w-24 bg-gold rounded-full mx-auto" />
+
+            <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed text-lg">
+              <p>
+                En <strong className="text-foreground">ITT International Travel & Fairs</strong> nos especializamos en llevar empresarios y grupos de empresas a las ferias que mueven el mundo: China, Japón, Europa, India y África. Destinos donde un apretón de manos puede abrir mercados enteros.
+              </p>
+              <p>
+                No vendemos solo pasajes. Diseñamos misiones de negocio a medida. Coordinamos cada detalle: rutas, agendas, reuniones clave, protocolos culturales y seguimiento post-viaje, para que cada salida termine en oportunidades concretas.
+              </p>
+              <p>
+                Trabajamos con aerolíneas y operadores de primer nivel en cada destino, así como con Cámaras de Comercio, organizaciones y representantes feriales, para asegurar el acceso, las condiciones y las alianzas que marcan la diferencia.
+              </p>
+              <p>
+                Contamos con un equipo de alto rendimiento, porque sabemos que en terreno la precisión y la confianza son todo.
+              </p>
+              <p>
+                <strong className="text-foreground">Nuestra especialidad:</strong> grupos feriales y viajes corporativos que conectan oferta y demanda real, con métricas claras y retorno medible.
+              </p>
+              <p>
+                ¿Y por qué no complementar con un viaje de vacaciones para descubrir destinos nuevos e interesantes? También de eso nos encargamos.
+              </p>
+            </div>
+          </div>
+
+          {/* Ana María Section */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2 items-center">
             {/* Image */}
             <div className="relative animate-fade-in-left opacity-0">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative aspect-[3/4] max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
-                  alt="ITT Travel Team collaboration"
+                  src="/anamariaa.jpeg"
+                  alt="Ana María Canale - Fundadora y Gerente General de ITT Travel & Fairs"
                   fill
                   className="object-cover"
                 />
@@ -91,7 +112,7 @@ export default function NosotrosPage() {
 
               {/* Floating Stats Card */}
               <div className="absolute -bottom-8 -right-4 bg-white rounded-xl shadow-xl p-4 border border-border">
-                <div className="font-playfair text-3xl font-bold text-burgundy">45+</div>
+                <div className="font-playfair text-3xl font-bold text-burgundy">48+</div>
                 <div className="text-sm text-muted-foreground">Años de Experiencia</div>
               </div>
             </div>
@@ -99,25 +120,29 @@ export default function NosotrosPage() {
             {/* Content */}
             <div className="animate-fade-in-right opacity-0" style={{ animationDelay: '0.2s' }}>
               <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-foreground">
-                Nuestra Historia
+                El respaldo detrás de ITT: <span className="text-burgundy">Ana María Canale</span>
               </h2>
               <div className="mt-4 h-1 w-20 bg-gold rounded-full" />
 
+              <p className="mt-6 text-xl font-semibold text-burgundy">
+                Objetivo: CONVERTIR VIAJES EN RESULTADOS
+              </p>
+
               <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  <strong className="text-foreground">ITT Travel</strong> nació en 2009 con una misión clara:
-                  facilitar a las empresas peruanas su conexión con mercados internacionales a través de
-                  viajes de negocios eficientes y bien organizados.
+                  Con 48 años de experiencia en el sector y dominio de tres idiomas, Ana María es la fundadora y Gerente General de International Travel & Fairs. Su trayectoria guiando a empresarios y equipos a nivel internacional es la garantía de que cada misión está en manos expertas.
                 </p>
                 <p>
-                  Lo que comenzó como una pequeña agencia especializada en la Canton Fair de China, hoy
-                  es una empresa integral que cubre las principales ferias comerciales y tecnológicas
-                  en 4 continentes.
+                  Su conocimiento profundo de los mercados globales, los protocolos culturales y las relaciones con operadores clave es lo que convierte cada experiencia de ITT Travel & Fairs, ya sea profesional o personal, en algo verdaderamente diferente.
                 </p>
                 <p>
-                  Nuestra filosofía siempre ha sido la misma: cada cliente merece una atención personalizada
-                  y un servicio que supere sus expectativas. No somos solo una agencia de viajes; somos
-                  su socio estratégico en la expansión internacional de su negocio.
+                  Su visión y liderazgo son los cimientos sobre los que se construyó ITT Travel & Fairs: una agencia boutique con trato personalizado y un propósito claro: conectar a empresas con las ferias más importantes del mundo.
+                </p>
+                <p className="text-lg font-medium text-foreground">
+                  ¿Tu organización está lista para dar el siguiente paso?
+                </p>
+                <p className="text-burgundy font-semibold">
+                  Déjate llevar por ITT Travel & Fairs. Te llevamos a la feria correcta, en el momento indicado, con la agenda que convierte. De todo esto, y más, nos encargamos nosotros.
                 </p>
               </div>
             </div>
@@ -221,10 +246,7 @@ export default function NosotrosPage() {
                   <h3 className="font-playfair text-2xl font-bold">Misión</h3>
                 </div>
                 <p className="text-white/90 leading-relaxed">
-                  Facilitar la expansión internacional de las empresas peruanas a través de
-                  servicios de viajes corporativos y comerciales de excelencia, brindando
-                  atención personalizada y soluciones integrales que superen las expectativas
-                  de nuestros clientes.
+                  Facilitar la expansión internacional de las empresas peruanas mediante servicios de viajes corporativos y comerciales de alto estándar, y a la vez, diseñar experiencias viajeras únicas y memorables para familias y grupos, a través de una atención personalizada y soluciones integrales que superen las expectativas de nuestros clientes.
                 </p>
               </div>
             </div>
@@ -239,9 +261,7 @@ export default function NosotrosPage() {
                   <h3 className="font-playfair text-2xl font-bold text-gold">Visión</h3>
                 </div>
                 <p className="text-white/90 leading-relaxed">
-                  Ser la agencia de viajes corporativos líder en Perú, reconocida por nuestra
-                  especialización en ferias internacionales y visitas técnicas, y por ser el
-                  socio estratégico preferido de las empresas que buscan conectar con el mundo.
+                  Ser la agencia de viajes líder en Perú, destacada por nuestra especialización en viajes corporativos y de vacaciones, misiones comerciales, visitas técnicas y experiencias grupales únicas y memorables que marquen a cada uno de nuestros clientes.
                 </p>
               </div>
             </div>
@@ -286,73 +306,29 @@ export default function NosotrosPage() {
             </h2>
             <div className="mt-3 h-1 w-16 bg-gold rounded-full mx-auto" />
           </div>
-          <div className="glass-card rounded-2xl p-8 sm:p-12 max-w-3xl mx-auto">
+          <div className="glass-card rounded-2xl p-8 sm:p-12 max-w-4xl mx-auto">
             <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
               <Image
                 src="/logo-asociaciones.jpeg"
                 alt="Asociaciones del sector turístico"
-                width={280}
-                height={112}
-                className="h-24 sm:h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                width={320}
+                height={128}
+                className="h-28 sm:h-36 w-auto object-contain"
               />
               <Image
                 src="/logo_alemania.jpeg"
                 alt="Ferias de Alemania"
-                width={280}
-                height={112}
-                className="h-24 sm:h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                width={320}
+                height={128}
+                className="h-28 sm:h-36 w-auto object-contain"
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Fairs Calendar - NEW SECTION */}
-      <section className="py-20 bg-background">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            title="Calendario de Ferias"
-            subtitle="Planifique su próximo viaje de negocios con nosotros"
-          />
-          <FairsCalendar />
-        </div>
-      </section>
-
-      {/* Timeline - Company History */}
-      <section className="py-20 bg-secondary/30">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            title="Nuestra Trayectoria"
-            subtitle="Hitos importantes en nuestra historia"
-          />
-
-          <div className="relative max-w-3xl mx-auto">
-            {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-burgundy via-gold to-burgundy hidden md:block" />
-
-            <div className="space-y-8">
-              {milestones.map((milestone, index) => (
-                <div
-                  key={milestone.year}
-                  className="relative flex items-start gap-8 animate-fade-in-up opacity-0"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {/* Dot */}
-                  <div className="hidden md:flex h-16 w-16 rounded-full bg-white border-4 border-burgundy items-center justify-center flex-shrink-0 shadow-lg z-10">
-                    <span className="font-playfair text-lg font-bold text-burgundy">{milestone.year}</span>
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex-1 bg-white rounded-xl border border-border p-6 hover:shadow-lg hover:border-gold/50 transition-all duration-300 group">
-                    <div className="md:hidden font-playfair text-xl font-bold text-burgundy mb-2">
-                      {milestone.year}
-                    </div>
-                    <p className="text-muted-foreground group-hover:text-foreground transition-colors">
-                      {milestone.event}
-                    </p>
-                  </div>
-                </div>
-              ))}
+              <Image
+                src="/logo_iata.jpg"
+                alt="IATA - International Air Transport Association"
+                width={200}
+                height={100}
+                className="h-20 sm:h-24 w-auto object-contain"
+              />
             </div>
           </div>
         </div>

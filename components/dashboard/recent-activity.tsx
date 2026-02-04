@@ -66,12 +66,13 @@ export function RecentActivity({ activities = [] }: RecentActivityProps) {
   }
 
   // Demo data for when no Sanity connection
+  // Using static dates to avoid hydration issues
   const demoActivities: ActivityItem[] = [
-    { _id: '1', _type: 'landingIdea', _updatedAt: new Date().toISOString(), title: 'New Hero Section Design' },
-    { _id: '2', _type: 'contentBlock', _updatedAt: new Date(Date.now() - 3600000).toISOString(), title: 'About ITT Description' },
-    { _id: '3', _type: 'mediaAsset', _updatedAt: new Date(Date.now() - 7200000).toISOString(), title: 'Team Photo 2024' },
-    { _id: '4', _type: 'socialLink', _updatedAt: new Date(Date.now() - 86400000).toISOString(), title: 'Instagram' },
-    { _id: '5', _type: 'strategyDoc', _updatedAt: new Date(Date.now() - 172800000).toISOString(), title: 'Q1 Marketing Plan' },
+    { _id: '1', _type: 'landingIdea', _updatedAt: '2026-02-03T12:00:00Z', title: 'New Hero Section Design' },
+    { _id: '2', _type: 'contentBlock', _updatedAt: '2026-02-03T11:00:00Z', title: 'About ITT Description' },
+    { _id: '3', _type: 'mediaAsset', _updatedAt: '2026-02-03T10:00:00Z', title: 'Team Photo 2024' },
+    { _id: '4', _type: 'socialLink', _updatedAt: '2026-02-02T12:00:00Z', title: 'Instagram' },
+    { _id: '5', _type: 'strategyDoc', _updatedAt: '2026-02-01T12:00:00Z', title: 'Q1 Marketing Plan' },
   ]
 
   const displayActivities = activities.length > 0 ? activities : demoActivities

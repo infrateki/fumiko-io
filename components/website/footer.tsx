@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from 'lucide-react'
 
 const quickLinks = [
   { href: '/servicios', label: 'Servicios' },
@@ -10,9 +10,15 @@ const quickLinks = [
 ]
 
 const services = [
-  { href: '/servicios#corporativos', label: 'Viajes Corporativos' },
-  { href: '/servicios#ferias', label: 'Ferias y Exposiciones' },
-  { href: '/servicios#visitas', label: 'Visitas Técnicas' },
+  { href: '/servicios#corporativos', label: 'Viajes Corporativos y de Incentivo' },
+  { href: '/servicios#ferias', label: 'Misiones Comerciales' },
+  { href: '/servicios#grupos', label: 'Viajes en grupo' },
+]
+
+const socialLinks = [
+  { href: 'https://www.linkedin.com/company/international-travel-team/', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://www.instagram.com/itt_travelcorp/', icon: Instagram, label: 'Instagram' },
+  { href: 'https://www.facebook.com/profile.php?id=61580202170551', icon: Facebook, label: 'Facebook' },
 ]
 
 export function Footer() {
@@ -84,30 +90,58 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3 text-gray-400 text-sm">
                 <MapPin className="h-4 w-4 text-gold flex-shrink-0 mt-0.5" />
-                <span>Calle Esquilache 731 piso 6, San Isidro, Lima, Perú</span>
+                <span>Calle Esquilache 371 piso 6, San Isidro, Lima, Perú</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Association Logos */}
+        {/* Social Media Links */}
         <div className="mt-12 pt-8 border-t border-gray-700">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+            <p className="text-gray-500 text-sm">Síguenos en redes sociales</p>
+            <div className="flex items-center gap-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-700 hover:bg-gold hover:text-black transition-all"
+                  title={social.label}
+                >
+                  <social.icon className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Association Logos */}
+        <div className="mt-8 pt-8 border-t border-gray-700">
           <div className="flex flex-col items-center gap-4">
             <p className="text-gray-500 text-xs uppercase tracking-wider">Asociaciones</p>
             <div className="flex items-center justify-center gap-8 flex-wrap">
               <Image
                 src="/logo-asociaciones.jpeg"
                 alt="Asociaciones del sector turístico"
-                width={180}
-                height={72}
-                className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 hover:opacity-100"
+                width={240}
+                height={96}
+                className="h-20 w-auto object-contain"
               />
               <Image
                 src="/logo_alemania.jpeg"
                 alt="Ferias de Alemania"
-                width={180}
-                height={72}
-                className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 hover:opacity-100"
+                width={240}
+                height={96}
+                className="h-20 w-auto object-contain"
+              />
+              <Image
+                src="/logo_iata.jpg"
+                alt="IATA - International Air Transport Association"
+                width={160}
+                height={80}
+                className="h-16 w-auto object-contain"
               />
             </div>
           </div>

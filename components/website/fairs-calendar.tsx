@@ -18,7 +18,7 @@ interface MonthData {
   fairs: Fair[]
 }
 
-const fairsCalendar2025: MonthData[] = [
+const fairsCalendar2026: MonthData[] = [
   {
     month: 'Enero',
     fairs: [
@@ -122,7 +122,7 @@ export function FairsCalendar() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h3 className="font-playfair text-2xl font-bold text-foreground">
-            Calendario de Ferias <span className="text-gold">2025</span>
+            Calendario de Ferias <span className="text-gold">2026</span>
           </h3>
           <p className="text-muted-foreground mt-1">Planifique su próximo viaje de negocios</p>
         </div>
@@ -155,7 +155,7 @@ export function FairsCalendar() {
 
         {/* Months */}
         <div className="grid grid-cols-6 gap-4">
-          {fairsCalendar2025.slice(startIndex, startIndex + visibleMonths).map((monthData, index) => {
+          {fairsCalendar2026.slice(startIndex, startIndex + visibleMonths).map((monthData, index) => {
             const monthIndex = startIndex + index
             const isCurrentMonth = monthIndex === currentMonth
             const hasFairs = monthData.fairs.length > 0

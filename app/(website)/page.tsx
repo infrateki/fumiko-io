@@ -4,7 +4,6 @@ import { HeroCarousel } from '@/components/website/hero-carousel'
 import { ServiceCard } from '@/components/website/service-card'
 import { SectionHeader } from '@/components/website/section-header'
 import { CTASection } from '@/components/website/cta-section'
-import { UpcomingFairs } from '@/components/website/upcoming-fairs'
 
 export const metadata: Metadata = {
   title: 'ITT Travel | Viajes Corporativos, Ferias y Visitas Técnicas',
@@ -69,12 +68,12 @@ export default function HomePage() {
         secondaryCtaHref="/ferias"
         backgroundImages={[
           'https://images.unsplash.com/photo-1528127269322-539801943592?w=1920&q=80', // Ha-Long Bay, Vietnam
-          'https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=1920&q=80', // Phi Phi Islands, Thailand
-          'https://images.unsplash.com/photo-1537531383496-f4749e00d3d9?w=1920&q=80', // Yangshuo, China karst mountains
+          'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1920&q=80', // Phi Phi Islands, Thailand - vivid
+          'https://images.unsplash.com/photo-1513415277900-a62401e19be4?w=1920&q=80', // China karst mountains landscape
           'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1920&q=80', // El Nido, Philippines
-          'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?w=1920&q=80', // Bali temple, Indonesia
-          'https://images.unsplash.com/photo-1529921879218-f99546d03a26?w=1920&q=80', // Guilin, China
-          'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=1920&q=80', // Zhangjiajie, China (couple hiking)
+          'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80', // Bali rice terraces, Indonesia - vivid
+          'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1920&q=80', // Tokyo skyline
+          'https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?w=1920&q=80', // Couple traveling together
         ]}
         nextFair={{
           name: 'Canton Fair Fase 1',
@@ -83,9 +82,6 @@ export default function HomePage() {
         }}
         interval={6000}
       />
-
-      {/* Upcoming Fairs Section */}
-      <UpcomingFairs />
 
       {/* Services Section */}
       <section className="py-20 bg-background">

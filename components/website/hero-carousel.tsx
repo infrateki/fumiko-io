@@ -80,11 +80,10 @@ export function HeroCarousel({
             />
           </div>
         ))}
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
-        {/* Decorative Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-burgundy/30 via-transparent to-gold/10" />
+        {/* Lighter Overlay - keeping images vivid */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent" />
+        {/* Subtle bottom gradient for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
       </div>
 
       {/* Slide Indicators */}
@@ -192,7 +191,7 @@ export function HeroCarousel({
             </div>
             <div className="flex items-center gap-2 group">
               <div className="h-2 w-2 rounded-full bg-gold group-hover:scale-125 transition-transform" />
-              <span>+650 empresas satisfechas</span>
+              <span>+500 empresas satisfechas</span>
             </div>
           </div>
         </div>

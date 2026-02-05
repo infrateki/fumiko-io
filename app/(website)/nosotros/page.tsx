@@ -44,12 +44,12 @@ export default function NosotrosPage() {
           images={[
             { src: 'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=1920&q=80', alt: 'Grupo de viajeros en destino paradisiaco' },
             { src: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1920&q=80', alt: 'Equipo disfrutando viaje de incentivo empresarial' },
-            { src: 'https://images.unsplash.com/photo-1523908511403-7fc7b25592f4?w=1920&q=80', alt: 'Ganadores de viajes premio disfrutando' },
+            { src: 'https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?w=1920&q=80', alt: 'Pareja viajando junta en destino exótico' },
           ]}
           interval={5000}
           overlay={false}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-white animate-fade-in-up">
             Sobre <span className="text-gold">Nosotros</span>
@@ -164,8 +164,8 @@ export default function NosotrosPage() {
               {/* Division Image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
-                  alt="Ferias Internacionales"
+                  src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&q=80"
+                  alt="Grupo de viajeros felices"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -199,8 +199,8 @@ export default function NosotrosPage() {
               {/* Division Image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80"
-                  alt="Viajes Corporativos"
+                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
+                  alt="Equipo corporativo en reunión"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -325,9 +325,9 @@ export default function NosotrosPage() {
               <Image
                 src="/logo_iata.jpg"
                 alt="IATA - International Air Transport Association"
-                width={200}
-                height={100}
-                className="h-20 sm:h-24 w-auto object-contain"
+                width={320}
+                height={128}
+                className="h-28 sm:h-36 w-auto object-contain"
               />
             </div>
           </div>

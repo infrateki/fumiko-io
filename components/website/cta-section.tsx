@@ -51,12 +51,11 @@ export function CTASection({
             {showWhatsApp && (
               <Button
                 size="lg"
-                variant="outline"
                 asChild
-                className="border-white/30 text-white hover:bg-white/10 gap-2 text-base px-8"
+                className="bg-[#25D366] hover:bg-[#25D366]/90 text-white gap-2 text-base px-8 font-semibold"
               >
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="h-5 w-5" />
+                  <MessageCircle className="h-5 w-5" fill="currentColor" />
                   WhatsApp
                 </a>
               </Button>

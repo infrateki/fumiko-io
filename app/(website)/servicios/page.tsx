@@ -34,8 +34,8 @@ const serviceDetails = [
     title: 'Viajes Corporativos y de Incentivo',
     description:
       'Gestionamos todos los aspectos de los viajes de negocios de su empresa, desde la planificación hasta la ejecución. Incluye programas de incentivo y premios laborales.',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
-    imageAlt: 'Equipo de negocios en reunión',
+    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80',
+    imageAlt: 'Grupo de compañeros de trabajo disfrutando en playa paradisíaca',
     features: [
       {
         icon: Plane,
@@ -71,8 +71,8 @@ const serviceDetails = [
     title: 'Ferias y Exposiciones',
     description:
       'Organizamos misiones comerciales y su participación completa en las principales ferias del mundo. Soporte 24/7.',
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
-    imageAlt: 'Feria comercial internacional',
+    image: '/fumiko_new.jpg',
+    imageAlt: 'Grupo de emprendedores en misión comercial',
     features: [
       {
         icon: Ticket,
@@ -147,13 +147,13 @@ export default function ServiciosPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px]">
         <Image
-          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&q=80"
-          alt="Servicios ITT Travel"
+          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
+          alt="Empresario entrando a feria en Shanghai"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-4">
           <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-white text-center">
             Nuestros <span className="text-gold">Servicios</span>

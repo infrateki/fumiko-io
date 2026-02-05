@@ -309,7 +309,7 @@ export default function ContactoPage() {
               {/* Google Maps */}
               <div className="bg-white rounded-2xl border border-border overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5!2d-77.02!3d-12.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b5d35b4e3d%3A0x15d4b8f8a3d3b8e0!2sSan%20Isidro%2C%20Lima%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1706000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.4!2d-77.0345!3d-12.0965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c87b84e5b89f%3A0x0!2sCalle%20Esquilache%20371%2C%20San%20Isidro%2015036%2C%20Peru!5e0!3m2!1ses!2sus!4v1706000000000"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
@@ -317,7 +317,7 @@ export default function ContactoPage() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="rounded-xl"
-                  title="Ubicación ITT Travel - San Isidro, Lima"
+                  title="Ubicación ITT Travel - Calle Esquilache 371, San Isidro, Lima"
                 />
               </div>
             </div>

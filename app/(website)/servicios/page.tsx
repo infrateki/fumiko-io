@@ -147,8 +147,8 @@ export default function ServiciosPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px]">
         <Image
-          src="https://images.unsplash.com/photo-1559223607-a43f990c095c?w=1920&q=80"
-          alt="Visitantes caminando por pasillo de feria comercial con stands"
+          src="https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Visitantes en evento de feria comercial"
           fill
           className="object-cover"
           priority

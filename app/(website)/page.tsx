@@ -4,6 +4,7 @@ import { HeroCarousel } from '@/components/website/hero-carousel'
 import { ServiceCard } from '@/components/website/service-card'
 import { SectionHeader } from '@/components/website/section-header'
 import { CTASection } from '@/components/website/cta-section'
+import { UpcomingFairs } from '@/components/website/upcoming-fairs'
 
 export const metadata: Metadata = {
   title: 'ITT Travel | Viajes Corporativos, Ferias y Visitas Técnicas',
@@ -74,11 +75,6 @@ export default function HomePage() {
           'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1920&q=80', // Tokyo skyline
           'https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?w=1920&q=80', // Couple traveling together
         ]}
-        nextFair={{
-          name: 'Canton Fair Fase 1',
-          dates: '15-19 Abril 2026',
-          location: 'Guangzhou, China'
-        }}
         interval={6000}
       />
 
@@ -109,6 +105,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Upcoming Fairs - Reserve su lugar */}
+      <UpcomingFairs />
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-background">

@@ -8,10 +8,10 @@ const categoryImages: Record<string, string> = {
   comercial: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80', // Trade fair/conference
   tecnologia: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80', // Technology/circuits
   industrial: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80', // Industrial/manufacturing
+  alimentacion: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80', // Food/bakery
   turismo: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80', // Travel/tourism
   automotriz: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80', // Car/automotive
   moda: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&q=80', // Fashion/clothing
-  packaging: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80', // Packaging/boxes
   default: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80', // Default conference
 }
 
@@ -21,44 +21,39 @@ const fairSpecificImages: Record<string, string> = {
   'Canton Fair Fase 1': 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80', // Conference/trade show
   'Canton Fair Fase 2': 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80', // Business conference
   'Canton Fair Fase 3': 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80', // Event venue
-  'Canton Fair Otoño': 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80', // Crowd event
 
-  // China Plus series - Shanghai
-  'China Plus Shanghai': 'https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?w=800&q=80', // Shanghai business
-  'China Plus Electronics': 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80', // Electronics/tech
-  'China Plus Textiles': 'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80', // Textiles/fabric
+  // Industrial - China
+  'Chinaplas': 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80', // Industrial/plastics
+  'Bauma China': 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80', // Construction machinery
 
-  // Interpac series - Düsseldorf
-  'Interpack Düsseldorf': 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80', // Packaging industry
-  'Interpac Processing': 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80', // Industrial processing
+  // Alimentación
+  'Bakery China': 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80', // Bakery/food
+  'Asia Fruit Logistica': 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=800&q=80', // Fresh fruits
 
-  // Tourism fairs
-  'FITUR Madrid': 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80', // Madrid/Spain tourism
-  'ITB Berlin': 'https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80', // Berlin city
-  'WTM London': 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80', // London tourism
+  // Tech fairs - Hong Kong
+  'HK International Lighting Fair': 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', // Lighting
+  'HK Electronics Fair': 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80', // Electronics
 
-  // Tech fairs
-  'CES Las Vegas': 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80', // Tech/electronics
-  'MWC Barcelona': 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80', // Mobile tech
-  'IFA Berlin': 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80', // Consumer electronics
+  // Tech - Asia
   'Computex Taipei': 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80', // Computer tech
-
-  // Industrial fairs
-  'Hannover Messe': 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80', // Industrial
-  'Bauma Munich': 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80', // Construction
-  'EMO Hannover': 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80', // Machinery
-
-  // Automotive
-  'Automechanika Frankfurt': 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80', // Automotive
-  'Auto Shanghai': 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80', // Auto show
 
   // Commercial
   'Yiwu Fair': 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80', // Market/trade
   'Global Sources Hong Kong': 'https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=800&q=80', // Hong Kong business
 
-  // Fashion
-  'MAGIC Las Vegas': 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&q=80', // Fashion
+  // Fashion/Textiles
+  'China Plus Textiles': 'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80', // Textiles/fabric
   'Premiere Vision Paris': 'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80', // Textiles/fashion
+
+  // Tourism
+  'FITUR Madrid': 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80', // Madrid/Spain tourism
+
+  // Industrial - Europe
+  'Bauma Munich': 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80', // Construction
+
+  // Automotive
+  'Automechanika Frankfurt': 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80', // Automotive
+  'Auto Shanghai': 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80', // Auto show
 }
 
 interface FairCardProps {

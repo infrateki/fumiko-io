@@ -199,8 +199,8 @@ export default function NosotrosPage() {
               {/* Division Image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1560264280-88b68371db39?w=800&q=80"
-                  alt="Profesionales caminando hacia centro de convenciones"
+                  src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80"
+                  alt="Empresarios cerrando negocio en feria comercial"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />

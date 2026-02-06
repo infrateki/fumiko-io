@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Calendar, MapPin } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 interface HeroCarouselProps {
   title: string
@@ -15,11 +15,6 @@ interface HeroCarouselProps {
   secondaryCtaText?: string
   secondaryCtaHref?: string
   backgroundImages?: string[]
-  nextFair?: {
-    name: string
-    dates: string
-    location: string
-  }
   interval?: number // milliseconds between slides
 }
 
@@ -34,11 +29,6 @@ export function HeroCarousel({
   backgroundImages = [
     'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80',
   ],
-  nextFair = {
-    name: 'Canton Fair Fase 1',
-    dates: '15-19 Abril 2025',
-    location: 'Guangzhou, China'
-  },
   interval = 5000
 }: HeroCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -119,21 +109,6 @@ export function HeroCarousel({
       {/* Content */}
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-32 pt-40">
         <div className="max-w-3xl">
-          {/* Badge - Next Fair */}
-          <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.1s' }}>
-            <Link
-              href="/ferias"
-              className="group inline-flex items-center gap-3 rounded-full bg-gold/20 border border-gold/40 px-4 py-2 text-sm font-medium text-gold mb-8 hover:bg-gold/30 transition-all duration-300 animate-pulse-glow"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-gold"></span>
-              </span>
-              <span>Próxima salida: {nextFair.name}</span>
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Link>
-          </div>
-
           {/* Title */}
           <h1 className="font-playfair text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s' }}>
             {title}
@@ -196,30 +171,6 @@ export function HeroCarousel({
           </div>
         </div>
 
-        {/* Floating Card - Next Fair Details */}
-        <div className="hidden lg:block absolute right-8 bottom-32 animate-fade-in-right opacity-0" style={{ animationDelay: '0.6s' }}>
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 p-6 w-72 hover:bg-white/15 transition-all duration-300 hover:-translate-y-2">
-            <div className="text-xs text-gold font-semibold uppercase tracking-wider mb-3">Próxima Salida Grupal</div>
-            <h3 className="font-playfair text-xl font-bold text-white mb-4">{nextFair.name}</h3>
-            <div className="space-y-2 text-sm text-gray-300">
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-gold" />
-                <span>{nextFair.dates}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-gold" />
-                <span>{nextFair.location}</span>
-              </div>
-            </div>
-            <Link
-              href="/contacto"
-              className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-gold hover:text-gold/80 transition-colors"
-            >
-              <span>Reservar lugar</span>
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </div>
       </div>
 
       {/* Scroll Indicator */}

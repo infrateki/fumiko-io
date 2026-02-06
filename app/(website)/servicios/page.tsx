@@ -71,7 +71,7 @@ const serviceDetails = [
     title: 'Ferias y Exposiciones',
     description:
       'Organizamos misiones comerciales y su participación completa en las principales ferias del mundo. Soporte 24/7.',
-    image: '/fumiko_new.jpg',
+    image: '/fumiko_new.jpeg',
     imageAlt: 'Grupo de emprendedores en misión comercial',
     features: [
       {
@@ -147,8 +147,8 @@ export default function ServiciosPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px]">
         <Image
-          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
-          alt="Empresario entrando a feria en Shanghai"
+          src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1920&q=80"
+          alt="Visitantes caminando por pasillo de feria comercial con stands"
           fill
           className="object-cover"
           priority

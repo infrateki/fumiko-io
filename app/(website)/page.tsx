@@ -68,7 +68,6 @@ export default function HomePage() {
         secondaryCtaHref="/ferias"
         backgroundImages={[
           'https://images.unsplash.com/photo-1528127269322-539801943592?w=1920&q=80', // Ha-Long Bay, Vietnam
-          'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1920&q=80', // Phi Phi Islands, Thailand - vivid
           'https://images.unsplash.com/photo-1513415277900-a62401e19be4?w=1920&q=80', // China karst mountains landscape
           'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1920&q=80', // El Nido, Philippines
           'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80', // Bali rice terraces, Indonesia - vivid

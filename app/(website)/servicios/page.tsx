@@ -71,8 +71,8 @@ const serviceDetails = [
     title: 'Ferias y Exposiciones',
     description:
       'Organizamos misiones comerciales y su participación completa en las principales ferias del mundo. Soporte 24/7.',
-    image: '/fumiko_new.jpeg',
-    imageAlt: 'Grupo de emprendedores en misión comercial',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
+    imageAlt: 'Grupo de empresarios en misión comercial',
     features: [
       {
         icon: Ticket,
@@ -147,7 +147,7 @@ export default function ServiciosPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px]">
         <Image
-          src="https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
           alt="Visitantes en evento de feria comercial"
           fill
           className="object-cover"

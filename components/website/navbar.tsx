@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import { useLogoToggle } from '@/components/website/logo-toggle-provider'
 
 const navLinks = [
   { href: '/', label: 'Inicio' },
@@ -19,6 +20,7 @@ const navLinks = [
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const { useAltLogo, toggle } = useLogoToggle()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,14 +41,15 @@ export function Navbar() {
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-24 items-center justify-between">
-          {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center group"
+          {/* Logo - click to toggle between logos */}
+          <button
+            onClick={toggle}
+            className="flex items-center group cursor-pointer bg-transparent border-none p-0"
+            aria-label="Toggle logo"
           >
             <div className="relative overflow-hidden rounded-2xl transition-transform duration-300 group-hover:scale-105">
               <Image
-                src="/nuevo-logo-itt.jpeg"
+                src={useAltLogo ? '/LOGO_FINALE_SINFONDO.jpg' : '/nuevo-logo-itt.jpeg'}
                 alt="ITT Travel - International Travel & Fairs"
                 width={220}
                 height={80}
@@ -54,7 +57,7 @@ export function Navbar() {
                 priority
               />
             </div>
-          </Link>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">

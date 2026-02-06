@@ -1,6 +1,9 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from 'lucide-react'
+import { useLogoToggle } from '@/components/website/logo-toggle-provider'
 
 const quickLinks = [
   { href: '/servicios', label: 'Servicios' },
@@ -22,21 +25,27 @@ const socialLinks = [
 ]
 
 export function Footer() {
+  const { useAltLogo, toggle } = useLogoToggle()
+
   return (
     <footer className="bg-[#2D2D2D] text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="space-y-4">
-            <Link href="/" className="inline-block">
+            <button
+              onClick={toggle}
+              className="inline-block cursor-pointer bg-transparent border-none p-0"
+              aria-label="Toggle logo"
+            >
               <Image
-                src="/nuevo-logo-itt.jpeg"
+                src={useAltLogo ? '/LOGO_FINALE_SINFONDO.jpg' : '/nuevo-logo-itt.jpeg'}
                 alt="ITT Travel - International Travel & Fairs"
                 width={280}
                 height={100}
                 className="h-24 w-auto object-contain rounded-2xl"
               />
-            </Link>
+            </button>
             <p className="text-gray-400 text-sm leading-relaxed">
               Especialistas en viajes corporativos, ferias internacionales y visitas técnicas a fábricas de alta tecnología.
             </p>

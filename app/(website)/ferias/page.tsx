@@ -318,7 +318,7 @@ export default function FeriasPage() {
             {[
               { value: '20+', label: 'Ferias al año' },
               { value: '4', label: 'Continentes' },
-              { value: '650+', label: 'Clientes satisfechos' },
+              { value: '+500', label: 'Clientes satisfechos' },
               { value: '45', label: 'Años de experiencia' },
             ].map((stat, index) => (
               <div key={stat.label} className="animate-fade-in-up opacity-0" style={{ animationDelay: `${index * 0.1}s` }}>

@@ -71,8 +71,8 @@ const serviceDetails = [
     title: 'Ferias y Exposiciones',
     description:
       'Organizamos misiones comerciales y su participación completa en las principales ferias del mundo. Soporte 24/7.',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
-    imageAlt: 'Grupo de empresarios en misión comercial',
+    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80',
+    imageAlt: 'Grupo de empresarios caminando por pasillo de feria comercial',
     features: [
       {
         icon: Ticket,
@@ -147,13 +147,13 @@ export default function ServiciosPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px]">
         <Image
-          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
-          alt="Visitantes en evento de feria comercial"
+          src="https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?w=1920&q=80"
+          alt="Entrada vibrante a feria comercial internacional"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-black/35" />
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-4">
           <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-white text-center">
             Nuestros <span className="text-gold">Servicios</span>

@@ -11,53 +11,12 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 
 const fairs = [
-  // TECNOLOGÍA
-  {
-    name: 'CES Las Vegas',
-    location: 'Las Vegas',
-    country: 'USA',
-    dates: '7-10 Enero 2025',
-    description:
-      'Consumer Electronics Show es la feria de tecnología de consumo más influyente del mundo. Descubra las últimas innovaciones en electrónica, inteligencia artificial, vehículos autónomos y tecnologías emergentes.',
-    category: 'tecnologia',
-    featured: true,
-    spotsLeft: 8,
-  },
-  {
-    name: 'MWC Barcelona',
-    location: 'Barcelona',
-    country: 'España',
-    dates: '24-27 Febrero 2025',
-    description:
-      'Mobile World Congress es el evento más importante de la industria de telecomunicaciones y tecnología móvil. Reúne a los principales fabricantes, operadores e innovadores del sector.',
-    category: 'tecnologia',
-    spotsLeft: 12,
-  },
-  {
-    name: 'IFA Berlin',
-    location: 'Berlín',
-    country: 'Alemania',
-    dates: '5-9 Septiembre 2025',
-    description:
-      'La feria de electrónica de consumo más grande de Europa. Electrónica, electrodomésticos inteligentes y las últimas innovaciones tecnológicas para el hogar.',
-    category: 'tecnologia',
-  },
-  {
-    name: 'Computex Taipei',
-    location: 'Taipei',
-    country: 'Taiwán',
-    dates: '3-6 Junio 2025',
-    description:
-      'Una de las ferias de computación más grandes de Asia. Hardware, componentes, gaming y tecnología de punta para profesionales de TI.',
-    category: 'tecnologia',
-  },
-
   // COMERCIAL
   {
     name: 'Canton Fair Fase 1',
     location: 'Guangzhou',
     country: 'China',
-    dates: '15-19 Abril 2025',
+    dates: 'Abril 2026',
     description:
       'La Feria de Importación y Exportación de China es la más grande y antigua feria comercial de China. Fase 1: Electrónica, maquinaria, vehículos, herramientas y equipos.',
     category: 'comercial',
@@ -68,7 +27,7 @@ const fairs = [
     name: 'Canton Fair Fase 2',
     location: 'Guangzhou',
     country: 'China',
-    dates: '23-27 Abril 2025',
+    dates: 'Abril 2026',
     description:
       'Fase 2 de la Canton Fair: Artículos de consumo, decoración del hogar, regalos, textiles y productos para el hogar.',
     category: 'comercial',
@@ -78,25 +37,86 @@ const fairs = [
     name: 'Canton Fair Fase 3',
     location: 'Guangzhou',
     country: 'China',
-    dates: '1-5 Mayo 2025',
+    dates: 'Mayo 2026',
     description:
       'Fase 3 de la Canton Fair: Textiles, calzado, alimentos, productos médicos y químicos.',
     category: 'comercial',
   },
   {
-    name: 'Canton Fair Otoño',
-    location: 'Guangzhou',
+    name: 'Chinaplas',
+    location: 'Shenzhen',
     country: 'China',
-    dates: '15 Oct - 4 Nov 2025',
+    dates: 'Abril 2026',
     description:
-      'La edición de otoño de la Canton Fair con las tres fases. Ideal para preparar las compras de fin de año y próxima temporada.',
-    category: 'comercial',
+      'Feria internacional líder en la industria del plástico y caucho en Asia. Maquinaria, materias primas, tecnología de moldes y soluciones de manufactura avanzada.',
+    category: 'industrial',
+    featured: true,
+    spotsLeft: 8,
+  },
+  {
+    name: 'Bakery China',
+    location: 'Shanghai',
+    country: 'China',
+    dates: 'Mayo 2026',
+    description:
+      'La feria más importante de panadería y confitería en Asia. Equipos, ingredientes, packaging y las últimas tendencias de la industria alimentaria.',
+    category: 'alimentacion',
+    spotsLeft: 10,
+  },
+  {
+    name: 'HK International Lighting Fair',
+    location: 'Hong Kong',
+    country: 'China',
+    dates: 'Octubre 2026',
+    description:
+      'La feria de iluminación más grande de Asia. LED, iluminación inteligente, diseño de luminarias y soluciones de eficiencia energética para proyectos comerciales y residenciales.',
+    category: 'tecnologia',
+    spotsLeft: 12,
+  },
+  {
+    name: 'HK Electronics Fair',
+    location: 'Hong Kong',
+    country: 'China',
+    dates: 'Octubre 2026',
+    description:
+      'Una de las ferias de electrónica más grandes del mundo. Componentes, audio/video, dispositivos IoT, wearables y tecnología de consumo de última generación.',
+    category: 'tecnologia',
+    spotsLeft: 9,
+  },
+  {
+    name: 'Asia Fruit Logistica',
+    location: 'Hong Kong',
+    country: 'China',
+    dates: 'Noviembre 2026',
+    description:
+      'El evento líder de la industria de frutas y verduras frescas en Asia. Conecte con productores, distribuidores y compradores del sector agroalimentario internacional.',
+    category: 'alimentacion',
+    spotsLeft: 15,
+  },
+  {
+    name: 'Bauma China',
+    location: 'Shanghai',
+    country: 'China',
+    dates: 'Noviembre 2026',
+    description:
+      'La feria de maquinaria de construcción y minería más importante de Asia. Equipos pesados, tecnología de construcción y soluciones para infraestructura.',
+    category: 'industrial',
+    spotsLeft: 6,
+  },
+  {
+    name: 'Computex Taipei',
+    location: 'Taipei',
+    country: 'Taiwán',
+    dates: 'Junio 2026',
+    description:
+      'Una de las ferias de computación más grandes de Asia. Hardware, componentes, gaming y tecnología de punta para profesionales de TI.',
+    category: 'tecnologia',
   },
   {
     name: 'Yiwu Fair',
     location: 'Yiwu',
     country: 'China',
-    dates: '21-25 Octubre 2025',
+    dates: 'Octubre 2026',
     description:
       'Feria de Commodities de Yiwu, el mercado de productos de pequeño volumen más grande del mundo. Ideal para importadores que buscan variedad y precios competitivos.',
     category: 'comercial',
@@ -105,64 +125,19 @@ const fairs = [
     name: 'Global Sources Hong Kong',
     location: 'Hong Kong',
     country: 'China',
-    dates: '11-14 Abril 2025',
+    dates: 'Abril 2026',
     description:
       'Feria premium de electrónica y productos de consumo. Excelente para encontrar fabricantes de alta calidad y nuevas innovaciones.',
     category: 'comercial',
-  },
-
-  // CHINA PLUS SERIES - Shanghai
-  {
-    name: 'China Plus Shanghai',
-    location: 'Shanghai',
-    country: 'China',
-    dates: '12-14 Marzo 2025',
-    description:
-      'China Plus es la plataforma líder para conectar compradores internacionales con fabricantes chinos de alta calidad. Encuentre proveedores verificados en múltiples industrias.',
-    category: 'comercial',
-    featured: true,
-    spotsLeft: 8,
-  },
-  {
-    name: 'China Plus Electronics',
-    location: 'Shanghai',
-    country: 'China',
-    dates: '18-20 Junio 2025',
-    description:
-      'Edición especializada en electrónica de consumo, componentes, dispositivos smart home y tecnología IoT. Los mejores fabricantes OEM/ODM de China.',
-    category: 'tecnologia',
-    spotsLeft: 12,
   },
   {
     name: 'China Plus Textiles',
     location: 'Shanghai',
     country: 'China',
-    dates: '8-10 Septiembre 2025',
+    dates: 'Septiembre 2026',
     description:
       'Feria especializada en textiles, telas, hilados y confecciones. Conecte con las principales fábricas textiles de la región de Shanghai y Zhejiang.',
     category: 'moda',
-  },
-
-  // INTERPACK SERIES - Düsseldorf
-  {
-    name: 'Interpack Düsseldorf',
-    location: 'Düsseldorf',
-    country: 'Alemania',
-    dates: '4-10 Mayo 2025',
-    description:
-      'La feria líder mundial en procesamiento y envasado. Maquinaria de empaque, materiales de embalaje, soluciones de packaging sostenible y automatización.',
-    category: 'packaging',
-    featured: true,
-    spotsLeft: 6,
-  },
-  {
-    name: 'Interpac Processing',
-    location: 'Düsseldorf',
-    country: 'Alemania',
-    dates: '4-10 Mayo 2025',
-    description:
-      'Sección especializada de Interpack enfocada en tecnología de procesamiento de alimentos, bebidas, farmacéuticos y productos químicos.',
-    category: 'industrial',
   },
 
   // TURISMO
@@ -170,58 +145,21 @@ const fairs = [
     name: 'FITUR Madrid',
     location: 'Madrid',
     country: 'España',
-    dates: '22-26 Enero 2025',
+    dates: 'Enero 2026',
     description:
       'Feria Internacional de Turismo de Madrid, una de las ferias de turismo más importantes del mundo. Punto de encuentro para profesionales del sector turístico global.',
     category: 'turismo',
     spotsLeft: 15,
   },
-  {
-    name: 'ITB Berlin',
-    location: 'Berlín',
-    country: 'Alemania',
-    dates: '4-6 Marzo 2025',
-    description:
-      'La feria líder mundial del sector turístico. ITB Berlin reúne a más de 10,000 expositores de 180 países, siendo el evento más importante para la industria del viaje.',
-    category: 'turismo',
-  },
-  {
-    name: 'WTM London',
-    location: 'Londres',
-    country: 'Reino Unido',
-    dates: '3-5 Noviembre 2025',
-    description:
-      'World Travel Market es la feria de turismo más importante del Reino Unido. Networking de primer nivel con operadores turísticos de todo el mundo.',
-    category: 'turismo',
-  },
 
-  // INDUSTRIAL
-  {
-    name: 'Hannover Messe',
-    location: 'Hannover',
-    country: 'Alemania',
-    dates: '31 Mar - 4 Abr 2025',
-    description:
-      'La feria industrial más grande del mundo. Especializada en automatización, energía, tecnología industrial y logística. El lugar donde se presenta la Industria 4.0.',
-    category: 'industrial',
-    featured: true,
-  },
+  // INDUSTRIAL - Europa
   {
     name: 'Bauma Munich',
     location: 'Múnich',
     country: 'Alemania',
-    dates: '7-13 Abril 2025',
+    dates: 'Abril 2028',
     description:
-      'La feria más grande del mundo en maquinaria de construcción, minería y equipos. Más de 3,500 expositores presentan las últimas innovaciones del sector.',
-    category: 'industrial',
-  },
-  {
-    name: 'EMO Hannover',
-    location: 'Hannover',
-    country: 'Alemania',
-    dates: '15-20 Septiembre 2025',
-    description:
-      'Feria mundial de tecnología de producción metalúrgica. Máquinas herramienta, sistemas de fabricación y tecnologías de producción avanzadas.',
+      'La feria más grande del mundo en maquinaria de construcción, minería y equipos. Más de 3,500 expositores. Próxima edición trienal en 2028.',
     category: 'industrial',
   },
 
@@ -230,7 +168,7 @@ const fairs = [
     name: 'Automechanika Frankfurt',
     location: 'Frankfurt',
     country: 'Alemania',
-    dates: '9-13 Septiembre 2025',
+    dates: 'Septiembre 2026',
     description:
       'La feria líder mundial de la industria automotriz. Autopartes, equipos de taller, accesorios y todo lo relacionado con el sector automotor.',
     category: 'automotriz',
@@ -239,27 +177,18 @@ const fairs = [
     name: 'Auto Shanghai',
     location: 'Shanghai',
     country: 'China',
-    dates: '21-28 Abril 2025',
+    dates: 'Abril 2027',
     description:
-      'El salón del automóvil más importante de Asia. Nuevos lanzamientos, vehículos eléctricos y el futuro de la movilidad en el mercado chino.',
+      'El salón del automóvil más importante de Asia. Nuevos lanzamientos, vehículos eléctricos y el futuro de la movilidad. Próxima edición bienal en 2027.',
     category: 'automotriz',
   },
 
   // MODA
   {
-    name: 'MAGIC Las Vegas',
-    location: 'Las Vegas',
-    country: 'USA',
-    dates: '17-19 Febrero 2025',
-    description:
-      'La feria de moda más grande de América. Ropa, calzado, accesorios y las últimas tendencias de la industria textil.',
-    category: 'moda',
-  },
-  {
     name: 'Premiere Vision Paris',
     location: 'París',
     country: 'Francia',
-    dates: '11-13 Febrero 2025',
+    dates: 'Febrero 2026',
     description:
       'La feria de textiles y materiales más prestigiosa del mundo. Telas, hilados, accesorios y tendencias para las próximas temporadas.',
     category: 'moda',
@@ -271,7 +200,7 @@ const categories = [
   { id: 'comercial', label: 'Comerciales', count: fairs.filter(f => f.category === 'comercial').length },
   { id: 'tecnologia', label: 'Tecnología', count: fairs.filter(f => f.category === 'tecnologia').length },
   { id: 'industrial', label: 'Industrial', count: fairs.filter(f => f.category === 'industrial').length },
-  { id: 'packaging', label: 'Packaging', count: fairs.filter(f => f.category === 'packaging').length },
+  { id: 'alimentacion', label: 'Alimentación', count: fairs.filter(f => f.category === 'alimentacion').length },
   { id: 'turismo', label: 'Turismo', count: fairs.filter(f => f.category === 'turismo').length },
   { id: 'automotriz', label: 'Automotriz', count: fairs.filter(f => f.category === 'automotriz').length },
   { id: 'moda', label: 'Moda', count: fairs.filter(f => f.category === 'moda').length },

@@ -22,48 +22,39 @@ const fairsCalendar2026: MonthData[] = [
   {
     month: 'Enero',
     fairs: [
-      { name: 'CES Las Vegas', dates: '7-10 Ene', location: 'USA', featured: true },
-      { name: 'FITUR Madrid', dates: '22-26 Ene', location: 'España' },
+      { name: 'FITUR Madrid', dates: 'Ene 2026', location: 'España' },
     ],
   },
   {
     month: 'Febrero',
     fairs: [
-      { name: 'Premiere Vision', dates: '11-13 Feb', location: 'Francia' },
-      { name: 'MAGIC Las Vegas', dates: '17-19 Feb', location: 'USA' },
-      { name: 'MWC Barcelona', dates: '24-27 Feb', location: 'España', featured: true },
+      { name: 'Premiere Vision', dates: 'Feb 2026', location: 'Francia' },
     ],
   },
   {
     month: 'Marzo',
-    fairs: [
-      { name: 'ITB Berlin', dates: '4-6 Mar', location: 'Alemania' },
-      { name: 'China Plus Shanghai', dates: '12-14 Mar', location: 'China', featured: true },
-      { name: 'Hannover Messe', dates: '31 Mar-4 Abr', location: 'Alemania', featured: true },
-    ],
+    fairs: [],
   },
   {
     month: 'Abril',
     fairs: [
-      { name: 'Bauma Munich', dates: '7-13 Abr', location: 'Alemania' },
-      { name: 'Global Sources HK', dates: '11-14 Abr', location: 'Hong Kong' },
-      { name: 'Canton Fair F1', dates: '15-19 Abr', location: 'China', featured: true },
-      { name: 'Auto Shanghai', dates: '21-28 Abr', location: 'China' },
-      { name: 'Canton Fair F2', dates: '23-27 Abr', location: 'China' },
+      { name: 'Canton Fair F1', dates: 'Abr 2026', location: 'China', featured: true },
+      { name: 'Canton Fair F2', dates: 'Abr 2026', location: 'China' },
+      { name: 'Chinaplas', dates: 'Abr 2026', location: 'China', featured: true },
+      { name: 'Global Sources HK', dates: 'Abr 2026', location: 'Hong Kong' },
     ],
   },
   {
     month: 'Mayo',
     fairs: [
-      { name: 'Canton Fair F3', dates: '1-5 May', location: 'China' },
-      { name: 'Interpack', dates: '4-10 May', location: 'Alemania', featured: true },
+      { name: 'Canton Fair F3', dates: 'May 2026', location: 'China' },
+      { name: 'Bakery China', dates: 'May 2026', location: 'China' },
     ],
   },
   {
     month: 'Junio',
     fairs: [
-      { name: 'Computex Taipei', dates: '3-6 Jun', location: 'Taiwán' },
-      { name: 'China Plus Electronics', dates: '18-20 Jun', location: 'China', featured: true },
+      { name: 'Computex Taipei', dates: 'Jun 2026', location: 'Taiwán' },
     ],
   },
   {
@@ -77,23 +68,23 @@ const fairsCalendar2026: MonthData[] = [
   {
     month: 'Septiembre',
     fairs: [
-      { name: 'IFA Berlin', dates: '5-9 Sep', location: 'Alemania', featured: true },
-      { name: 'China Plus Textiles', dates: '8-10 Sep', location: 'China', featured: true },
-      { name: 'Automechanika', dates: '9-13 Sep', location: 'Alemania' },
-      { name: 'EMO Hannover', dates: '15-20 Sep', location: 'Alemania' },
+      { name: 'China Plus Textiles', dates: 'Sep 2026', location: 'China' },
+      { name: 'Automechanika', dates: 'Sep 2026', location: 'Alemania' },
     ],
   },
   {
     month: 'Octubre',
     fairs: [
-      { name: 'Canton Fair Otoño', dates: '15 Oct-4 Nov', location: 'China', featured: true },
-      { name: 'Yiwu Fair', dates: '21-25 Oct', location: 'China' },
+      { name: 'HK Lighting Fair', dates: 'Oct 2026', location: 'Hong Kong', featured: true },
+      { name: 'HK Electronics Fair', dates: 'Oct 2026', location: 'Hong Kong', featured: true },
+      { name: 'Yiwu Fair', dates: 'Oct 2026', location: 'China' },
     ],
   },
   {
     month: 'Noviembre',
     fairs: [
-      { name: 'WTM London', dates: '3-5 Nov', location: 'Reino Unido' },
+      { name: 'Asia Fruit Logistica', dates: 'Nov 2026', location: 'Hong Kong' },
+      { name: 'Bauma China', dates: 'Nov 2026', location: 'China', featured: true },
     ],
   },
   {

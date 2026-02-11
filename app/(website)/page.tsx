@@ -62,7 +62,7 @@ export default function HomePage() {
       <HeroCarousel
         title="Te conectamos"
         highlight="con el mundo"
-        subtitle="Especialistas en viajes corporativos, ferias internacionales y visitas técnicas a fábricas de alta tecnología. Hacemos que su negocio llegue más lejos."
+        subtitle="Nos especializamos en viajes corporativos, ferias internacionales y visitas técnicas a fábricas de alta tecnología. Hacemos que su negocio llegue más lejos."
         ctaText="Solicitar Cotización"
         ctaHref="/contacto"
         secondaryCtaText="Ver Ferias"

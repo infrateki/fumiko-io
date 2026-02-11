@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "ITT Travel | Viajes Corporativos, Ferias y Visitas Técnicas",
-  description: "Especialistas en viajes corporativos, ferias internacionales y visitas técnicas a fábricas. Canton Fair, CES, MWC Barcelona y más.",
+  description: "Nos especializamos en viajes corporativos, ferias internacionales y visitas técnicas a fábricas. Canton Fair, CES, MWC Barcelona y más.",
 };
 
 export default function RootLayout({

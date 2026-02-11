@@ -39,11 +39,12 @@ export function Footer() {
               aria-label="Toggle logo"
             >
               <Image
-                src={useAltLogo ? '/LOGO_FINALE_SINFONDO.jpg' : '/nuevo-logo-itt.jpeg'}
+                src="/itt-logo-v2.png"
                 alt="ITT Travel - International Travel & Fairs"
-                width={280}
-                height={100}
-                className="h-24 w-auto object-contain rounded-2xl"
+                width={220}
+                height={80}
+                className="h-16 sm:h-20 w-auto object-contain rounded-2xl"
+                priority
               />
             </button>
             <p className="text-gray-400 text-sm leading-relaxed">

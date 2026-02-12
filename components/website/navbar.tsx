@@ -49,7 +49,7 @@ export function Navbar() {
           >
             <div className="relative overflow-hidden rounded-2xl transition-transform duration-300 group-hover:scale-105">
               <Image
-                src={useAltLogo ? '/LOGO_FINALE_SINFONDO.png' : '/LOGO_FINALE_SINFONDO.png'}
+                src="/itt-logo-v2.png"
                 alt="ITT Travel - International Travel & Fairs"
                 width={220}
                 height={80}

@@ -146,13 +146,6 @@ export function Footer() {
                 height={96}
                 className="h-20 w-auto object-contain"
               />
-              <Image
-                src="/logo_iata.jpg"
-                alt="IATA - International Air Transport Association"
-                width={240}
-                height={96}
-                className="h-20 w-auto object-contain"
-              />
             </div>
           </div>
         </div>

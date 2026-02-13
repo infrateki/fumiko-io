@@ -51,9 +51,9 @@ export function Navbar() {
               <Image
                 src="/itt-logo-v2.png"
                 alt="ITT Travel - International Travel & Fairs"
-                width={220}
-                height={80}
-                className="h-16 sm:h-20 w-auto object-contain rounded-2xl"
+                width={440}
+                height={160}
+                className="h-32 sm:h-40 w-auto object-contain rounded-2xl"
                 priority
               />
             </div>
